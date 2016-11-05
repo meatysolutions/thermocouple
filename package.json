@@ -1,0 +1,40 @@
+{
+  "name": "thermocouple",
+  "version": "1.0.0",
+  "description": "library to convert between thermocouple voltages and temperatures",
+  "main": "lib/index.js",
+  "typings": "lib/index",
+  "scripts": {
+    "build": "tsc",
+    "test": "karma start karma.conf.js"
+  },
+  "files": [
+    "lib/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meatysolutions/thermocouple.git"
+  },
+  "keywords": [
+    "javascript",
+    "thermocouple",
+    "conversion",
+    "seebeck"
+  ],
+  "author": "Tim Fish <tim@meaty.io> (http://meaty.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meatysolutions/thermocouple/issues"
+  },
+  "homepage": "https://github.com/meatysolutions/thermocouple#readme",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.2",
+    "typescript": "^2.0.7",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-cli": "^1.0.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-typescript": "^2.0.9"
+  }
+}
