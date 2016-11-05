@@ -1,0 +1,65 @@
+<template>
+  <a href="https://github.com/meatysolutions/thermocouple"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+      alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+  <div class="container">
+    <div class="jumbotron col-md-8 offset-md-2">
+      <h1 class="display-3">thermocouple</h1>
+      <p class="lead">A JavaScript library to convert thermocouple voltages to temperatures and vice versa.</p>
+      <hr class="my-2">
+      <p>This is a simple demo application to show its functionality.</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3">
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label class=" form-control-label" for="tcType ">Thermocouple Type</label>
+            <select class="form-control" value.bind="selectedTc " id="tcType ">
+          <option>Choose...</option>
+            <option repeat.for="thermocouple of thermocouples " model.bind="thermocouple ">${'Type '+ thermocouple.name.toUpperCase() + ' Thermocouple'}</option>
+          </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6" style="margin: 1em 0px;">
+            Voltage to Temperature
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="input-group">
+              <input value.bind="inputVoltage" type="text" class="form-control">
+              <span class="input-group-addon" id="basic-addon2">mV</span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="input-group">
+              <input value.bind="outputTemp" type="text" class="form-control" readonly>
+              <span class="input-group-addon" id="basic-addon2">°C</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6" style="margin: 1em 0px;">
+            Temperature to Voltage
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="input-group">
+              <input value.bind="inputTemp" type="text" class="form-control">
+              <span class="input-group-addon" id="basic-addon2">°C</span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="input-group">
+              <input value.bind="outputVoltage" type="text" class="form-control" readonly>
+              <span class="input-group-addon" id="basic-addon2">mV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</template>
