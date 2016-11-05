@@ -2,6 +2,8 @@
 
 This library converts between voltage and temperature and vice versa for the 8 most common thermocouple types.
 
+View [a simple demo](https://meatysolutions.github.io/thermocouple/) of it in action.
+
 ```javascript
 import Thermocouple from 'thermocouple';
 
