@@ -1,6 +1,6 @@
 {
   "name": "thermocouple",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "library to convert between thermocouple voltages and temperatures",
   "main": "lib/index.js",
   "typings": "lib/index",
